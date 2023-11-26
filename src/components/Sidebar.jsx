@@ -11,7 +11,7 @@ const Sidebar = () => {
   if (!isMenuOpen) return null;
   return (
   <>
-    <div  className='w-72 overflow-hidden hover:overflow-auto h-screen  '>
+    <div  className='w-2/12 overflow-hidden hover:overflow-auto h-screen flex-shrink-0 fixed bg-white'>
       <Home/>
       <You/>
       <Subscriptions/>

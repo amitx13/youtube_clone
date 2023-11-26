@@ -1,6 +1,6 @@
 const ButtonList = () => {
   return (
-    <ul className=" flex font-semibold ">
+    <ul className=" flex font-semibold ml-96">
       <li className="font-semibold px-5 py-2  m-2 bg-gray-100 rounded-lg cursor-pointer text-xl  ">All</li>
       <li className="font-semibold px-5 py-2  m-2 bg-gray-100 rounded-lg cursor-pointer text-xl  ">Live</li>
       <li className="font-semibold px-5 py-2  m-2 bg-gray-100 rounded-lg cursor-pointer text-xl  ">Gaming</li>

@@ -2,7 +2,7 @@ import { FaSearch } from "react-icons/fa";
 import { FaMicrophone } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
 import { toogleMenu } from "./utils/appSlice";
-
+import { Link } from "react-router-dom";
 
 const Head = () => {
   const dispatch = useDispatch();
@@ -12,11 +12,12 @@ const Head = () => {
   }
 
   return (
-    <div className="grid grid-flow-col items-center sticky top-0 bg-white">
+    <div className="grid grid-flow-col items-center sticky top-0 bg-white z-50">
       <div className="flex col-span-1 p-4 items-center">
         <img className="h-9 pl-3 cursor-pointer" onClick={()=>handleClick()} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0evWy6vmua96UkF8RqHQv-SoBcuu3V9fwZw&usqp=CAU" alt="menu-bar" />
-        <img className="h-6 pl-5 " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjdB5idttrtpfZkhv3Dz20jvA14SXgOCOKQiBT6_tnEyagCBi91sEJMTU8X6eLxzb5dQ&usqp=CAU" alt="" />
-      </div>
+        <a href="/"><img  className="h-6 pl-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjdB5idttrtpfZkhv3Dz20jvA14SXgOCOKQiBT6_tnEyagCBi91sEJMTU8X6eLxzb5dQ&usqp=CAU" alt="" />
+        </a>
+      </div> 
 
       <div className="col-span-10 p-3 pl-60 flex items-center">
     <input type="text" placeholder="Search" className="h-12 w-7/12 border-solid border border-gray-400 rounded-l-full  pl-4 border-r-0" />

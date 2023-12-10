@@ -8,3 +8,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
+/*infinite loading concept - jab v page ka end pahuche tbb lazyLoading se fetch kro nextPageToken ko aur usko v render krdo */

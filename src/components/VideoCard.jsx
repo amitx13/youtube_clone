@@ -5,11 +5,11 @@ import { IoMdMore } from "react-icons/io";
 
 const VideoCard = ({info}) => {
   const {snippet,statistics,contentDetails} = info;
-  console.log(info);
+ /*  console.log(info);
   console.log(statistics.likeCount);
   console.log(snippet.title);
   console.log(snippet.channelTitle);
-  console.log(snippet.publishedAt);
+  console.log(snippet.publishedAt); */
   const {url} = snippet.thumbnails.high;
   const status = contentDetails.licensedContent;
   return (

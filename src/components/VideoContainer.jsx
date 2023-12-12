@@ -1,21 +1,11 @@
-import { useEffect, useState } from "react"
+
 import VideoCard from "./VideoCard"
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { closeMenu } from "./utils/appSlice";
+import useVideos from "./useVideos";
 const VideoContainer = () => {
-  const [videosList,setVideosList]= useState();
-
-
-  useEffect(()=>{
-    getVideos();
-  },[])
-  async function getVideos(){
-    const data= await fetch("https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=AIzaSyCX-_fo1DMJJxU0oavcGy-k0YIxEMmyN5E")
-    const json=await data.json();
-    setVideosList(json.items);
-    //console.log(json.items);
-  }
+  const videosList = useVideos();
 
   const dispatch = useDispatch();
   const offState = ()=>{
